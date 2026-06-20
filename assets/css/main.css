@@ -2558,8 +2558,15 @@ input, select, textarea {
 	}
 
 		.work-item .image {
+			aspect-ratio: 1 / 1;
 			margin: 0 0 1.5em 0;
+			overflow: hidden;
 		}
+
+			.work-item .image img {
+				height: 100%;
+				object-fit: cover;
+			}
 
 		.work-item h3 {
 			font-size: 1em;

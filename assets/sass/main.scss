@@ -1050,7 +1050,14 @@ $size-header-pad: 4em;
 		margin: 0 0 _size(element-margin) 0;
 
 		.image {
+			aspect-ratio: 1 / 1;
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
+			overflow: hidden;
+		}
+
+		.image img {
+			height: 100%;
+			object-fit: cover;
 		}
 
 		h3 {
